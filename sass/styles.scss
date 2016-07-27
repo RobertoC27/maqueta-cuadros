@@ -1,5 +1,68 @@
+$base-color:#2A52BE;
+$border-width:2px;
+$color-letra:white;
 $dark-color: #aaa;
-
+$font-size:30px;
+$overlapping:25px;
+$square-size:100px;
+$start-left:0px;
+$start-top:525px;
 body{
   background: $dark-color;
+}
+
+.squares{
+	position:relative;
+}
+
+.square{
+	border: $border-width solid black;
+	color: $color-letra;
+	font-size: $font-size;
+	font-weight: bold;
+	height: $square-size;
+	line-height: $square-size;
+	position: absolute;
+	text-align: center;
+	width: $square-size;
+
+	&.s1{
+		background: $base-color*0.1;
+		left: $start-left;
+		top: $start-top;
+	}
+	&.s2{
+		background: $base-color*0.3;
+		left: $start-left +($square-size - $overlapping);
+		top: $start-top -($square-size - $overlapping);
+		z-index: 3;
+	}
+	&.s3{
+		background: $base-color*0.5;
+		left: $start-left +($square-size - $overlapping)*2;
+		top: $start-top -($square-size - $overlapping)*2;
+		z-index: 3;
+	}
+	&.s4{
+		background: $base-color*0.9;
+		left: $start-left +($square-size - $overlapping)*3;
+		top: $start-top -($square-size - $overlapping)*3;
+		z-index: 0;
+	}
+	&.s5{
+		background: $base-color*1.3;
+		left: $start-left +($square-size - $overlapping)*4;
+		top: $start-top -($square-size - $overlapping)*4;
+	}
+	&.s6{
+		background: $base-color*1.8;
+		left: $start-left +($square-size - $overlapping)*5;
+		top: $start-top -($square-size - $overlapping)*5;
+		z-index: 2;
+	}
+	&.s7{
+	background: $base-color*2.3;
+	left: $start-left +($square-size - $overlapping)*6;
+		top: $start-top -($square-size - $overlapping)*6;
+	}
 }

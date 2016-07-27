@@ -1,2 +1,48 @@
 body {
   background: #aaa; }
+
+.squares {
+  position: relative; }
+
+.square {
+  border: 2px solid black;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  height: 100px;
+  line-height: 100px;
+  position: absolute;
+  text-align: center;
+  width: 100px; }
+  .square.s1 {
+    background: #040813;
+    left: 0px;
+    top: 525px; }
+  .square.s2 {
+    background: #0d1939;
+    left: 75px;
+    top: 450px;
+    z-index: 3; }
+  .square.s3 {
+    background: #15295f;
+    left: 150px;
+    top: 375px;
+    z-index: 3; }
+  .square.s4 {
+    background: #264aab;
+    left: 225px;
+    top: 300px;
+    z-index: 0; }
+  .square.s5 {
+    background: #376bf7;
+    left: 300px;
+    top: 225px; }
+  .square.s6 {
+    background: #4c94ff;
+    left: 375px;
+    top: 150px;
+    z-index: 2; }
+  .square.s7 {
+    background: #61bdff;
+    left: 450px;
+    top: 75px; }
