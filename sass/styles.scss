@@ -8,7 +8,7 @@ $square-size:100px;
 $start-left:0px;
 $start-top:525px;
 body{
-  background: $dark-color;
+  background: $dark-color*0.99;
 }
 
 .squares{
@@ -61,8 +61,8 @@ body{
 		z-index: 2;
 	}
 	&.s7{
-	background: $base-color*2.3;
-	left: $start-left +($square-size - $overlapping)*6;
+		background: $base-color*2.3;
+		left: $start-left +($square-size - $overlapping)*6;
 		top: $start-top -($square-size - $overlapping)*6;
 	}
 }
